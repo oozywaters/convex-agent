@@ -1,5 +1,5 @@
 // See the docs at https://docs.convex.dev/agents/usage-tracking
-import { vProviderMetadata, vUsage } from "@convex-dev/agent";
+import { vProviderMetadata, vUsage } from "@oozywaters/agent";
 import { defineTable } from "convex/server";
 import { v } from "convex/values";
 

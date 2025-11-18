@@ -1,4 +1,4 @@
-import { type Config } from "@convex-dev/agent";
+import { type Config } from "@oozywaters/agent";
 import { languageModel, textEmbeddingModel } from "../modelsForDemo";
 import { rawRequestResponseHandler } from "../debugging/rawRequestResponseHandler";
 import { usageHandler } from "../usage_tracking/usageHandler";

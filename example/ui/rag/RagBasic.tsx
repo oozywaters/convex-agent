@@ -3,7 +3,7 @@ import {
   optimisticallySendMessage,
   SmoothText,
   useThreadMessages,
-} from "@convex-dev/agent/react";
+} from "@oozywaters/agent/react";
 import { api } from "../../convex/_generated/api";
 import { useCallback, useEffect, useState } from "react";
 import { EntryId } from "@convex-dev/rag";

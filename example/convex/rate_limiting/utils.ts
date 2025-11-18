@@ -2,7 +2,7 @@
 import { v } from "convex/values";
 import { getAuthUserId } from "../utils";
 import { query, QueryCtx } from "../_generated/server";
-import { fetchContextMessages } from "@convex-dev/agent";
+import { fetchContextMessages } from "@oozywaters/agent";
 import { components } from "../_generated/api";
 import { rateLimiter } from "./rateLimiting";
 import { DataModel } from "../_generated/dataModel";

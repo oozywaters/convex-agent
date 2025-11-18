@@ -1,5 +1,5 @@
 // See the docs at https://docs.convex.dev/agents/rate-limiting
-import { Agent, saveMessage, UsageHandler } from "@convex-dev/agent";
+import { Agent, saveMessage, UsageHandler } from "@oozywaters/agent";
 import { components, internal } from "../_generated/api";
 import { internalAction, mutation } from "../_generated/server";
 import { v } from "convex/values";

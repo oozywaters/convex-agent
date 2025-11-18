@@ -7,7 +7,7 @@ import {
   mutation,
   internalMutation,
 } from "../_generated/server";
-import { abortStream, createThread, listStreams } from "@convex-dev/agent";
+import { abortStream, createThread, listStreams } from "@oozywaters/agent";
 import { agent } from "../agents/simple";
 import { smoothStream } from "ai";
 import { authorizeThreadAccess } from "../threads";

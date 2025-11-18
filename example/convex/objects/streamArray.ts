@@ -1,10 +1,10 @@
 import { action, query } from "../_generated/server.js";
-import { vStreamArgs } from "@convex-dev/agent";
+import { vStreamArgs } from "@oozywaters/agent";
 import { components } from "../_generated/api.js";
 import { defaultConfig } from "../agents/config.js";
 import z from "zod/v4";
 import { v } from "convex/values";
-import { syncStreams, DeltaStreamer } from "@convex-dev/agent";
+import { syncStreams, DeltaStreamer } from "@oozywaters/agent";
 import { streamObject } from "ai";
 import { authorizeThreadAccess } from "../threads.js";
 import { getAuthUserId } from "../utils.js";

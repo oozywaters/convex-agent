@@ -8,7 +8,7 @@ import {
   LightningBoltIcon,
 } from "@radix-ui/react-icons";
 
-const playgroundCode = `import { definePlaygroundAPI } from "@convex-dev/agent";
+const playgroundCode = `import { definePlaygroundAPI } from "@oozywaters/agent";
 import { components } from "./_generated/api";
 import { weatherAgent, fashionAgent } from "./example";
 
@@ -27,7 +27,7 @@ export const {
 
 const issueApiKey = `npx convex run --component agent apiKeys:issue`;
 
-const runPlayground = `npx @convex-dev/agent-playground`;
+const runPlayground = `npx @oozywaters/agent-playground`;
 
 const Index = () => {
   const navigate = useNavigate();
@@ -86,7 +86,7 @@ const Index = () => {
               href="https://convex.dev/components/agent"
               className="text-violet-900 hover:text-violet-950 font-normal  hover:underline"
             >
-              @convex-dev/agent
+              @oozywaters/agent
             </a>
             . Test your agents, browse threads, and explore message interactions
             in real-time.

@@ -4,7 +4,7 @@ import type { LanguageModelV2 } from "@ai-sdk/provider";
 import { anthropic } from "@ai-sdk/anthropic";
 import { openai } from "@ai-sdk/openai";
 import { groq } from "@ai-sdk/groq";
-import { mockModel } from "@convex-dev/agent";
+import { mockModel } from "@oozywaters/agent";
 
 let languageModel: LanguageModelV2;
 let textEmbeddingModel: EmbeddingModel<string>;

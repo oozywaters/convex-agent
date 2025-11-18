@@ -1,5 +1,5 @@
 // See the docs at https://docs.convex.dev/agents/getting-started
-import { Agent, stepCountIs } from "@convex-dev/agent";
+import { Agent, stepCountIs } from "@oozywaters/agent";
 import { components } from "../_generated/api";
 import { getGeocoding, getWeather } from "../tools/weather";
 import { defaultConfig } from "./config";

@@ -6,7 +6,7 @@ import {
   toUIMessages,
   useThreadMessages,
   type UIMessage,
-} from "@convex-dev/agent/react";
+} from "@oozywaters/agent/react";
 import { useCallback, useEffect, useState } from "react";
 import { toast } from "../hooks/use-toast";
 

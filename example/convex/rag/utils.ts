@@ -4,7 +4,7 @@ import {
   listMessages,
   syncStreams,
   vStreamArgs,
-} from "@convex-dev/agent";
+} from "@oozywaters/agent";
 import { vEntryId, vSearchEntry, vSearchResult } from "@convex-dev/rag";
 import { paginationOptsValidator } from "convex/server";
 import { v } from "convex/values";

@@ -11,7 +11,7 @@ import {
   FileIcon,
 } from "lucide-react";
 import { DynamicToolUIPart, ToolUIPart, UIMessage } from "ai";
-import { SmoothText } from "@convex-dev/agent/react";
+import { SmoothText } from "@oozywaters/agent/react";
 
 interface MessageItemProps {
   user: User | undefined;

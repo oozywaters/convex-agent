@@ -3,7 +3,7 @@ import {
   MessageDoc,
   StorageOptions,
   ThreadDoc,
-} from "@convex-dev/agent";
+} from "@oozywaters/agent";
 
 export interface Agent {
   name: string;

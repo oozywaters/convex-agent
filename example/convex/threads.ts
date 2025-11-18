@@ -16,7 +16,7 @@ import {
   getThreadMetadata,
   saveMessage,
   vMessage,
-} from "@convex-dev/agent";
+} from "@oozywaters/agent";
 import { getAuthUserId } from "./utils";
 import { agent } from "./agents/simple";
 import { z } from "zod/v3";

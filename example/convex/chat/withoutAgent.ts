@@ -1,6 +1,6 @@
 import { components, internal } from "../_generated/api";
 import { internalAction, mutation } from "../_generated/server";
-import { saveMessage, startGeneration } from "@convex-dev/agent";
+import { saveMessage, startGeneration } from "@oozywaters/agent";
 import { v } from "convex/values";
 import { authorizeThreadAccess } from "../threads";
 import { generateText } from "ai";

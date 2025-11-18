@@ -10,10 +10,10 @@ import {
   extractText,
   type MessageDoc,
   type PlaygroundAPI,
-} from "@convex-dev/agent";
+} from "@oozywaters/agent";
 import { ContextMessage, Thread, Agent } from "@/types";
-import { ContextOptions, StorageOptions } from "@convex-dev/agent";
-import { useThreadMessages } from "@convex-dev/agent/react";
+import { ContextOptions, StorageOptions } from "@oozywaters/agent";
+import { useThreadMessages } from "@oozywaters/agent/react";
 
 interface PlayProps {
   apiKey: string;

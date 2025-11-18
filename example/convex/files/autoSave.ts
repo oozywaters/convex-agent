@@ -3,7 +3,7 @@ import { v } from "convex/values";
 import { action } from "../_generated/server";
 import { agent } from "../agents/simple";
 import { components } from "../_generated/api";
-import { createThread } from "@convex-dev/agent";
+import { createThread } from "@oozywaters/agent";
 
 /**
  * This is a simple example of how to use the automatic file saving.

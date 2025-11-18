@@ -1,5 +1,5 @@
 // See the docs at https://docs.convex.dev/agents/getting-started
-import { Agent, createTool, stepCountIs } from "@convex-dev/agent";
+import { Agent, createTool, stepCountIs } from "@oozywaters/agent";
 import { components } from "../_generated/api";
 import { defaultConfig } from "./config";
 import { z } from "zod/v3";

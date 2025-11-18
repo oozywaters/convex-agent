@@ -5,7 +5,7 @@ import {
   createThread,
   createTool,
   stepCountIs,
-} from "@convex-dev/agent";
+} from "@oozywaters/agent";
 import z from "zod/v3";
 import { action } from "../_generated/server";
 import { tool } from "ai";

@@ -1,7 +1,7 @@
 import React, { useMemo, useRef, useEffect } from "react";
 import MessageItem from "./MessageItem";
 import { Message, User } from "../types";
-import { toUIMessages } from "@convex-dev/agent/react";
+import { toUIMessages } from "@oozywaters/agent/react";
 
 interface MessageListProps {
   users: User[];

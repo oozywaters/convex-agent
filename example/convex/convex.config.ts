@@ -1,5 +1,5 @@
 import { defineApp } from "convex/server";
-import agent from "@convex-dev/agent/convex.config";
+import agent from "@oozywaters/agent/convex.config";
 import workflow from "@convex-dev/workflow/convex.config";
 import rateLimiter from "@convex-dev/rate-limiter/convex.config";
 import rag from "@convex-dev/rag/convex.config";

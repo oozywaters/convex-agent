@@ -5,7 +5,7 @@ import {
   listUIMessages,
   syncStreams,
   vStreamArgs,
-} from "@convex-dev/agent";
+} from "@oozywaters/agent";
 import { components, internal } from "../_generated/api";
 import {
   action,

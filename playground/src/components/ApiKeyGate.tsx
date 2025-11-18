@@ -1,6 +1,6 @@
 import { useState, useEffect, ReactNode, useMemo } from "react";
 import { useConvex } from "convex/react";
-import type { PlaygroundAPI } from "@convex-dev/agent";
+import type { PlaygroundAPI } from "@oozywaters/agent";
 import { anyApi } from "convex/server";
 import { Button } from "./ui/button";
 import { useParams } from "react-router-dom";
@@ -9,7 +9,7 @@ const API_KEY_STORAGE_KEY = "playground_api_key";
 const API_PATH_STORAGE_KEY = "playground_api_path";
 const CLI_COMMAND = `npx convex run --component agent apiKeys:issue '{name:"..."}'`;
 const PLAYGROUND_CODE = `
-import { definePlaygroundAPI } from "@convex-dev/agent/playground";
+import { definePlaygroundAPI } from "@oozywaters/agent/playground";
 import { components } from "./_generated/api";
 import { weatherAgent, fashionAgent } from "./example";
 

@@ -1,9 +1,9 @@
 // See the docs at https://docs.convex.dev/agents/files
-import { Agent, createThread, saveMessage, storeFile } from "@convex-dev/agent";
+import { Agent, createThread, saveMessage, storeFile } from "@oozywaters/agent";
 import { components, internal } from "../_generated/api";
 import { action, internalAction, mutation } from "../_generated/server";
 import { v } from "convex/values";
-import { getFile } from "@convex-dev/agent";
+import { getFile } from "@oozywaters/agent";
 import { getAuthUserId } from "../utils";
 import { defaultConfig } from "../agents/config";
 

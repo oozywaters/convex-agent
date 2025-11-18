@@ -2,7 +2,7 @@
 import { test } from "vitest";
 import { convexTest } from "convex-test";
 import schema from "./schema.js";
-import agent from "@convex-dev/agent/test";
+import agent from "@oozywaters/agent/test";
 import workflow from "@convex-dev/workflow/test";
 import rateLimiter from "@convex-dev/rate-limiter/test";
 export const modules = import.meta.glob("./**/*.*s");

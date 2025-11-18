@@ -3,7 +3,7 @@ import { useMutation } from "convex/react";
 import { usePaginatedQuery } from "convex-helpers/react";
 import { api } from "../../convex/_generated/api";
 import ReactMarkdown from "react-markdown";
-import { useStreamingText, useThreadMessages } from "@convex-dev/agent/react";
+import { useStreamingText, useThreadMessages } from "@oozywaters/agent/react";
 
 export function WeatherFashion() {
   const [content, setContent] = useState("");

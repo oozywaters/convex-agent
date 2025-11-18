@@ -112,7 +112,7 @@ export {
   serializeMessage,
   toUIFilePart,
 } from "../mapping.js";
-// NOTE: these are also exported via @convex-dev/agent/validators
+// NOTE: these are also exported via @oozywaters/agent/validators
 // a future version may put them all here or move these over there
 export { extractText, isTool, sorted } from "../shared.js";
 export {
@@ -241,7 +241,7 @@ export class Agent<
        * Tools that the agent can call out to and get responses from.
        * They can be AI SDK tools (import {tool} from "ai")
        * or tools that have Convex context
-       * (import { createTool } from "@convex-dev/agent")
+       * (import { createTool } from "@oozywaters/agent")
        */
       tools?: AgentTools;
       /**

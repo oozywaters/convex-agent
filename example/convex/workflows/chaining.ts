@@ -1,6 +1,6 @@
 // See the docs at https://docs.convex.dev/agents/workflows
 import { WorkflowId, WorkflowManager } from "@convex-dev/workflow";
-import { createThread, saveMessage, stepCountIs } from "@convex-dev/agent";
+import { createThread, saveMessage, stepCountIs } from "@oozywaters/agent";
 import { components, internal } from "../_generated/api";
 import { action, mutation } from "../_generated/server";
 import { v } from "convex/values";

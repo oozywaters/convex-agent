@@ -1,5 +1,5 @@
 // See the docs at https://docs.convex.dev/agents/rag
-import { createTool } from "@convex-dev/agent";
+import { createTool } from "@oozywaters/agent";
 import { RAG } from "@convex-dev/rag";
 import { v } from "convex/values";
 import { z } from "zod/v3";

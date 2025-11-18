@@ -7,7 +7,7 @@ import {
   toUIMessages,
   useThreadMessages,
   type UIMessage,
-} from "@convex-dev/agent/react";
+} from "@oozywaters/agent/react";
 import { useState } from "react";
 import { cn } from "../lib/utils";
 import { useDemoThread } from "@/hooks/use-demo-thread";

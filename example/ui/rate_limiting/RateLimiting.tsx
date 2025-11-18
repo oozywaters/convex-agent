@@ -5,7 +5,7 @@ import {
   SmoothText,
   useUIMessages,
   type UIMessage,
-} from "@convex-dev/agent/react";
+} from "@oozywaters/agent/react";
 import { useCallback, useEffect, useState, useRef, useReducer } from "react";
 import { toast } from "../hooks/use-toast";
 import { isRateLimitError } from "@convex-dev/rate-limiter";

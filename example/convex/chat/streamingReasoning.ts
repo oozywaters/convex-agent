@@ -1,5 +1,5 @@
 // See the docs at https://docs.convex.dev/agents/messages
-import { Agent, createThread } from "@convex-dev/agent";
+import { Agent, createThread } from "@oozywaters/agent";
 import { components } from "../_generated/api";
 import { action } from "../_generated/server";
 import { v } from "convex/values";

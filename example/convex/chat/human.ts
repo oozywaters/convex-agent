@@ -4,7 +4,7 @@ import {
   syncStreams,
   vStreamArgs,
   listUIMessages,
-} from "@convex-dev/agent";
+} from "@oozywaters/agent";
 import {
   action,
   internalAction,

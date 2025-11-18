@@ -7,7 +7,7 @@ import type {
   PaginationOptions,
   PaginationResult,
 } from "convex/server";
-import type { SyncStreamsReturnValue } from "@convex-dev/agent";
+import type { SyncStreamsReturnValue } from "@oozywaters/agent";
 
 /**
  * Adds a sent message to the end of a list of messages, so it shows up until

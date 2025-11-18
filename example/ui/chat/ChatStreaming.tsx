@@ -6,7 +6,7 @@ import {
   useSmoothText,
   useUIMessages,
   type UIMessage,
-} from "@convex-dev/agent/react";
+} from "@oozywaters/agent/react";
 import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 import { useDemoThread } from "@/hooks/use-demo-thread";
