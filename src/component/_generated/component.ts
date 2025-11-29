@@ -2620,6 +2620,7 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
           summary?: string;
           title?: string;
           userId?: string;
+          id?: string;
         },
         {
           _creationTime: number;
