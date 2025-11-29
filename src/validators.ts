@@ -518,6 +518,7 @@ export const vThreadDoc = v.object({
   userId: v.optional(v.string()), // Unset for anonymous
   title: v.optional(v.string()),
   summary: v.optional(v.string()),
+  uuid: v.optional(v.string()),
   status: vThreadStatus,
 });
 export type ThreadDoc = Infer<typeof vThreadDoc>;
