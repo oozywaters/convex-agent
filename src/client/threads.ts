@@ -17,7 +17,7 @@ import type {
 export async function createThread(
   ctx: MutationCtx,
   component: AgentComponent,
-  args?: { userId?: string | null; title?: string; summary?: string, id: string },
+  args?: { userId?: string | null; title?: string; summary?: string, id?: string },
 ) {
   const { _id: threadId } = await ctx.runMutation(
     component.threads.createThread,
