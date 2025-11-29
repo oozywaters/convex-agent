@@ -2207,6 +2207,7 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
             provider?: string;
             providerOptions?: Record<string, Record<string, any>>;
             status?: "pending" | "success" | "failed";
+            userId?: string;
           };
         },
         {
@@ -2620,7 +2621,7 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
           summary?: string;
           title?: string;
           userId?: string;
-          id?: string;
+          uuid?: string;
         },
         {
           _creationTime: number;
@@ -2658,6 +2659,20 @@ export type ComponentApi<Name extends string | undefined = string | undefined> =
         "query",
         "internal",
         { threadId: string },
+        {
+          _creationTime: number;
+          _id: string;
+          status: "active" | "archived";
+          summary?: string;
+          title?: string;
+          userId?: string;
+        } | null,
+        Name
+      >;
+      getThreadByUUID: FunctionReference<
+        "query",
+        "internal",
+        { uuid: string },
         {
           _creationTime: number;
           _id: string;

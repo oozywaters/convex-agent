@@ -21,14 +21,14 @@ export const schema = defineSchema({
     title: v.optional(v.string()),
     summary: v.optional(v.string()),
     status: vThreadStatus,
-    id: v.optional(v.string()),
+    uuid: v.optional(v.string()),
     // DEPRECATED
     defaultSystemPrompt: v.optional(v.string()),
     parentThreadIds: v.optional(v.array(v.id("threads"))),
     order: /*DEPRECATED*/ v.optional(v.number()),
   })
     .index("userId", ["userId"])
-    .index("by_id", ["id"])
+    .index("by_uuid", ["uuid"])
     .searchIndex("title", { searchField: "title", filterFields: ["userId"] }),
   messages: defineTable({
     userId: v.optional(v.string()), // useful for searching across threads

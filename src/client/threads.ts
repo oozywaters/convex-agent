@@ -17,7 +17,7 @@ import type {
 export async function createThread(
   ctx: MutationCtx,
   component: AgentComponent,
-  args?: { userId?: string | null; title?: string; summary?: string, id?: string },
+  args?: { userId?: string | null; title?: string; summary?: string, uuid?: string },
 ) {
   const { _id: threadId } = await ctx.runMutation(
     component.threads.createThread,
@@ -25,7 +25,7 @@ export async function createThread(
       userId: args?.userId ?? undefined,
       title: args?.title,
       summary: args?.summary,
-      id: args?.id,
+      uuid: args?.uuid,
     },
   );
   return threadId;
@@ -44,6 +44,20 @@ export async function getThreadMetadata(
 ): Promise<ThreadDoc> {
   const thread = await ctx.runQuery(component.threads.getThread, {
     threadId: args.threadId,
+  });
+  if (!thread) {
+    throw new Error("Thread not found");
+  }
+  return thread;
+}
+
+export async function getThreadByUUID(
+  ctx: QueryCtx | MutationCtx | ActionCtx,
+  component: AgentComponent,
+  args: { uuid: string },
+): Promise<ThreadDoc> {
+  const thread = await ctx.runQuery(component.threads.getThreadByUUID, {
+    uuid: args.uuid,
   });
   if (!thread) {
     throw new Error("Thread not found");

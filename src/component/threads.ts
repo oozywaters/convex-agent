@@ -37,6 +37,19 @@ export const getThread = query({
   returns: v.union(vThreadDoc, v.null()),
 });
 
+export const getThreadByUUID = query({
+  args: { uuid: v.string() },
+  handler: async (ctx, { uuid }) => {
+    return publicThreadOrNull(
+      await ctx.db
+        .query("threads")
+        .withIndex("by_uuid", (q) => q.eq("uuid", uuid))
+        .first()
+    );
+  },
+  returns: v.union(vThreadDoc, v.null()),
+})
+
 export const listThreadsByUserId = query({
   args: {
     userId: v.optional(v.string()),
