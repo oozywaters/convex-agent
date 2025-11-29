@@ -21,7 +21,7 @@ export const schema = defineSchema({
     title: v.optional(v.string()),
     summary: v.optional(v.string()),
     status: vThreadStatus,
-    id: v.string(),
+    id: v.optional(v.string()),
     // DEPRECATED
     defaultSystemPrompt: v.optional(v.string()),
     parentThreadIds: v.optional(v.array(v.id("threads"))),
