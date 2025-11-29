@@ -76,7 +76,7 @@ import {
   syncStreams,
   type StreamingOptions,
 } from "./streaming.js";
-import { createThread, getThreadMetadata } from "./threads.js";
+import { createThread, getThreadMetadata, getThreadByUUID } from "./threads.js";
 import type {
   ActionCtx,
   AgentComponent,
@@ -174,6 +174,7 @@ export {
 export {
   createThread,
   getThreadMetadata,
+  getThreadByUUID,
   searchThreadTitles,
   updateThreadMetadata,
 } from "./threads.js";
@@ -974,6 +975,13 @@ export class Agent<
     args: { threadId: string },
   ): Promise<ThreadDoc> {
     return getThreadMetadata(ctx, this.component, args);
+  }
+
+  async getThreadByUUID(
+    ctx: QueryCtx | MutationCtx | ActionCtx,
+    args: { uuid: string },
+  ): Promise<ThreadDoc> {
+    return getThreadByUUID(ctx, this.component, args);
   }
 
   /**
